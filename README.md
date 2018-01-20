@@ -1,2 +1,2 @@
 # Projects
-Academic Projects that have been done by S Vaishali
+Academic projects done by S Vaishali
