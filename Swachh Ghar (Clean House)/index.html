@@ -1,0 +1,76 @@
+<html>
+
+<header>
+	<title>Swachh Ghar</title>
+	<link rel="stylesheet" href="CSS\style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+	<img src="CSS/SwachhGharLogo.jpg" style="height: 90px; float: left; margin-left: 150px;"><br><br><br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+            $("#servant").show();
+            $("#owner").hide();
+        $("#1").click(function(){
+        	$("#1").css("border-color","black");
+        	$("#2").css("border-color","white");
+        	$("#1").css("border","3px solid black");
+            $("#servant").hide();
+            $("#owner").show();
+        });
+    $("#2").click(function(){
+    	$("#1").css("border-color","white");
+    	$("#2").css("border-color","black");
+    	$("#2").css("border","3px solid black");
+      $("#servant").show();
+        $("#owner").hide();
+    });
+});
+
+</script>
+</header>
+
+
+<body>
+<div class="login">
+  <div class="login-header">
+ 	 <h1>Login</h1>
+  </div>
+
+  <div class="login-form">
+      <input id ="2" type="button" value="House Maid" class="signup-button" style="border-color:black; border: 3px solid black;" />
+      <input id="1" type="button" value="House Owner" class="signup-button" style="width: 110px;" />
+  </div>
+    <div class="login-form" id="servant">
+	    <form name="servant" action="checkservantlogindetails.php" method="post">
+		    <h3>Username:</h3>
+		    <input name="username" type="text" placeholder="Username" required /><br>
+		    <h3>Password:</h3>
+		    <input name="pass" type="password" placeholder="Password" required />
+		    <br>
+		    <input type="submit" value="Login" class="login-button" />
+		    </fieldset>
+		 </form>
+		 	<a href="forgetpasswordservant.php" class="sign-up"><font style="padding-left: 600px;">Forgot password?</font></a>
+		    <a href="signup.php" class="sign-up"><font style="padding-left:25px;">Don't have an account? Sign Up!</font></a>
+		    <br>
+	</div>
+
+	 <div class="login-form" id="owner">
+	 <form name="owner" action="checkownerlogindetails.php" method="post">
+	    <h3>Username:</h3>
+	    <input name="username" type="text" placeholder="Username" required /><br>
+	    <h3>Password:</h3>
+	    <input name="pass" type="password" placeholder="Password" required />
+	    <br>
+	    <input type="submit" value="Login" class="login-button" />
+	    <br>
+	 </form>
+	 	<a href="forgetpasswordowner.php" class="sign-up"><font style="padding-left: 600px;">Forgot password?</font></a>
+	    <a href="signup.php" class="sign-up"><font style="padding-left: 25px;"> Don't have an account? Sign Up!</font></a>
+	    <br>
+	 </div>
+  </div>
+
+</body>
+
+</html> 
