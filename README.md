@@ -1,2 +1,2 @@
 # Projects
-Academic projects done by S Vaishali
+Academic projects done by Vaishali Surianarayanan
